@@ -2,12 +2,12 @@
 This project models a COVID-19 disease outbreak monitoring system which has 4 hospitals. It leverages synthetic healthcare data, along with OpenEMR and a HAPI-FHIR server, to collect, integrate and share patient data to ensure interoperability.  Visualization of COVID-19 patient information in near real time was done through Google Looker Studio. 
 
 # System Architecture
-Five Virtual Hospital Environments: Baraga, Aspirus, Marquette, Portage, and UPHIE were each deployed in separate virtual machines 
-•	Electronic Medical Records: OpenEMR was installed on every VM and configured with firewall protections and secure MySQL settings 
-•	Central HAPI-FHIR Server: Hosted on the UPHIE VM to enable standardized data exchange across all sites to ensure interoperability
-•	Synthetic Data Generation: Synthea was used to create patient records in FHIR format 
-•	Data Processing: Python scripts were developed to extract and combine JSON dataset files containing the health records from the hospitals
-•	Visualization: A dashboard built in Google Looker Studio displays COVID-19 trends and metrics 
+* Five Virtual Hospital Environments: Baraga, Aspirus, Marquette, Portage, and UPHIE were each deployed in separate virtual machines
+* Electronic Medical Records: OpenEMR was installed on every VM and configured with firewall protections and secure MySQL settings
+* Central HAPI-FHIR Server: Hosted on the UPHIE VM to enable standardized data exchange across all sites to ensure interoperability
+* Synthetic Data Generation: Synthea was used to create patient records in FHIR format 
+* Data Processing: Python scripts were developed to extract and combine JSON dataset files containing the health records from the hospitals
+* Visualization: A dashboard built in Google Looker Studio displays COVID-19 trends and metrics 
 
 # Technologies Utilized
 •	OS- Ubuntu Linux 
