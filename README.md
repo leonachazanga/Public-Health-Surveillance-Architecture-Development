@@ -11,44 +11,47 @@ This project models a COVID-19 disease outbreak monitoring system which has 4 ho
 
 # Technologies Utilized
 * OS- Ubuntu Linux 
-•	EMR- OpenEMR with MySQL 
-•	Interoperability- HAPI-FHIR Server (customized interface) 
-•	API- Postman for FHIR resource management 
-•	Data generation-  Synthea 
-•	Data processing- Python (including Pandas, NumPy, and Matplotlib libraries) 
-•	Visualization- Google Looker Studio 
+* EMR- OpenEMR with MySQL 
+* Interoperability- HAPI-FHIR Server (customized interface) 
+* API- Postman for FHIR resource management 
+*	Data generation-  Synthea 
+*	Data processing- Python (including Pandas, NumPy, and Matplotlib libraries) 
+*	Visualization- Google Looker Studio 
 
 ##  Setup & Workflow
 # 1. Environment Setup
-•	Create and deploy 5 Ubuntu-based virtual machines for each hospital
-•	Configure firewall rules and secure MySQL on each node 
-•	Ping and ensure all VMs communicate
-2. Install Core Systems
-•	Install and configure OpenEMR on each hospital VM 
-•	Set up the centralized HAPI-FHIR Server 
+*	Create and deploy 5 Ubuntu-based virtual machines for each hospital
+*	Configure firewall rules and secure MySQL on each node 
+*	Ping and ensure all VMs communicate
+# 2. Install Core Systems
+*	Install and configure OpenEMR on each hospital VM 
+*	Set up the centralized HAPI-FHIR Server 
 # 3. Generate Data
-•	Use Synthea to simulate patient data 
-•	Export records in FHIR JSON format 
-4. Data Integration
-•	Use Python scripts to extract and combine datasets 
-•	Send FHIR resources via Postman or API pipelines 
+*	Use Synthea to simulate patient data 
+*	Export records in FHIR JSON format 
+# 4. Data Integration
+*	Use Python scripts to extract and combine datasets 
+*	Send FHIR resources via Postman or API pipelines 
 # 5. Visualization
-•	Connect aggregated data to Google Looker Studio 
-•	Build dashboards to monitor COVID-19 cases across hospitals
-Challenges Encountered
-•	Generating location-specific demographic data with Synthea 
-•	Maintaining consistent security configurations across multiple virtual machines and MySQL 
-•	Managing high memory consumption during aggregation of the large JSON datasets 
+*	Connect aggregated data to Google Looker Studio 
+*	Build dashboards to monitor COVID-19 cases across hospitals
+  
+## Challenges Encountered
+*	Generating location-specific demographic data with Synthea 
+*	Maintaining consistent security configurations across multiple virtual machines and MySQL 
+*	Managing high memory consumption during aggregation of the large JSON datasets 
 
 ## Results
-•	Built and deployed a functional multi-site health information exchange (HIE) system using OpenEMR and HAPI-FHIR 
-•	Successfully generated, stored, and secured patient records derived from synthetic datasets 
-•	Built a dashboard for monitoring disease trends across the multiple locations with visualization. 
+*	Built and deployed a functional multi-site health information exchange (HIE) system using OpenEMR and HAPI-FHIR 
+*	Successfully generated, stored, and secured patient records derived from synthetic datasets 
+*	Built a dashboard for monitoring disease trends across the multiple locations with visualization. 
 
 # Future Improvements
-•	Automate data pipelines for real-time processing
-•	Enhance the dashboard with predictive analytics (e.g., outbreak forecasting) 
-•	Integrate additional FHIR resources for more detailed clinical insights
-•	Use a higher performing hardware
+*	Automate data pipelines for real-time processing
+*	Enhance the dashboard with predictive analytics (e.g., outbreak forecasting) 
+*	Integrate additional FHIR resources for more detailed clinical insights
+*	Use a higher performing hardware
 
+## Dashboard Link
+  
 LINK- https://datastudio.google.com/s/lsTdLV2qUmQ
