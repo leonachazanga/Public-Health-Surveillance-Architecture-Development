@@ -10,7 +10,7 @@ This project models a COVID-19 disease outbreak monitoring system which has 4 ho
 * Visualization: A dashboard built in Google Looker Studio displays COVID-19 trends and metrics 
 
 # Technologies Utilized
-•	OS- Ubuntu Linux 
+* OS- Ubuntu Linux 
 •	EMR- OpenEMR with MySQL 
 •	Interoperability- HAPI-FHIR Server (customized interface) 
 •	API- Postman for FHIR resource management 
